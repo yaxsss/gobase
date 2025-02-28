@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-// 每个case必须是操作channel，如读或写, 每个case上可以加上执行代码（如调用函数）,select开始就是对每个case代码求值，得到channel
+// 每个case必须是操作channel，如读或写,
 // 多个channel可读或可写，select会随机公平地选出一个执行,其他而不会执行, 否则执行default子句
 // channel可读的条件：不能为nil，channel必须有数据或者channel被关闭
 // channel可写的条件：不能为nil，channel必须有空间
@@ -43,7 +43,7 @@ func selectCase() {
 	}
 }
 
-// 每个case上可以加上执行代码（如调用函数），select开始就是对每个case代码求值，得到channel
+// 每个case上可以加上执行代码（如调用函数）,进入select开始就是对每个case代码求值，得到channel
 // 输出结果:
 // <enter select><eval c1><read c1><leave select>
 // <enter select><eval c1><end><leave select>
