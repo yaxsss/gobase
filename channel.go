@@ -27,6 +27,7 @@ func closeChannel() {
 
 // 单向通道
 // 通道默认为双通道，我们可以指定它在一个函数里面使用单向通道模式
+// 输出01234
 func singleDirectionChannel() {
 	done := make(chan struct{})
 	// 输出通道，只能写
@@ -41,6 +42,7 @@ func singleDirectionChannel() {
 		for v := range in {
 			fmt.Print(v)
 		}
+		fmt.Println()
 		done <- struct{}{}
 	}
 	ch := make(chan int)

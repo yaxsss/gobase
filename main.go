@@ -2,5 +2,9 @@ package main
 
 func main() {
 	//selectCaseEval()
-	closeChannel()
+	//closeChannel()
+	//singleDirectionChannel()
+	//sizeof()
+	//emptyInterface()
+	typeAssertion()
 }
