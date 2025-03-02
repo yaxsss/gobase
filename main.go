@@ -6,5 +6,12 @@ func main() {
 	//singleDirectionChannel()
 	//sizeof()
 	//emptyInterface()
-	typeAssertion()
+	//typeAssertion()
+	//lateBinding()
+	//VariableLoop()
+	//lateBinding()
+	//loop()
+
+	//deferNotCalledAfterLeavingCodeBlock()
+	deferPutArgs()
 }
